@@ -1,4 +1,5 @@
 function gl = runGreenLight(lampType, weather, filename, paramNames, paramVals, isMature)
+
 % RUNGREENLIGHT Create an instance of the GreenLight model and run a simulation.
 % Uses parameter settings that represent a modern 4 ha greenhouse 
 % (see also setParams4haWorldComparison).
@@ -47,6 +48,10 @@ function gl = runGreenLight(lampType, weather, filename, paramNames, paramVals, 
     %% Set default values
     absTol = 1e-6; % default is 1e-6
     relTol = 1e-3; % default is 1e-3
+    filename = 'output-led';
+    lampType = 'led';
+    
+    
     
     if ~exist('weather', 'var') || isempty(weather)
         weather = 5;

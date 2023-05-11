@@ -621,7 +621,7 @@ A third option is to use [Tomlab](https://tomopt.com/tomlab/) to solve an optima
 Several things are still needed to define an optimal control problem, namely constraints and a goal function. For this we use the syntax of Tomlab. See the example file to see how this works, and look into the [Tomlab](https://tomopt.com/docs/TOMLAB.pdf) and [PROPT](https://tomopt.com/docs/TOMLAB_PROPT.pdf) guides for more information.
 
 Solving the optimal control problem with Tomlab is done with the fuction `solveTomlab`. The function is run by using one of the following:
-
+,m,m
 > ` >> solveTomlab(m, nColl, options);`<br>
 > ` >> solveTomlab(m, nColl);`<br>
 

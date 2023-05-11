@@ -21,10 +21,11 @@ seasonLength = 350; % Length of season (days) (default is 350)
 % Set directories for loading data and saving output
 currentFile = mfilename('fullpath');
 currentFolder = fileparts(currentFile);
-dataFolder = strrep(currentFolder, '\GreenLight\Code\runScenarios', ...
-    '\GreenLight\Code\inputs\energyPlus\data\');
-outputFolder = strrep(currentFolder, '\GreenLight\Code\runScenarios', ...
-    '\GreenLight\Output\');
+dataFolder = strrep(currentFolder, '/GreenLight/Code/runScenarios', ...
+    '/GreenLight/Code/inputs/energyPlus/data\');
+outputFolder = strrep(currentFolder, '/GreenLight/Code/runScenarios', ...
+    '/GreenLight/Output/');
+
     
 %% Reference setting
 fileLabel = 'referenceSetting';

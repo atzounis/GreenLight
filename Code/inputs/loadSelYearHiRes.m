@@ -51,7 +51,7 @@ function [weather, startTime] = loadSelYearHiRes(firstDay, seasonLength)
     currentFile = mfilename('fullpath');
     currentFolder = fileparts(currentFile);
     
-    path = [currentFolder '\Reference year SEL2000\seljaar.mat']; 
+    path = [currentFolder '/Reference year SEL2000/seljaar.mat']; 
     
     %% load hi res seljaar
     load(path, 'seljaarhires');
