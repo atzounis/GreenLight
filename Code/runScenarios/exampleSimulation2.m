@@ -13,7 +13,7 @@ outputFolder = strrep(currentFolder, '/Code/runScenarios', ...
     '/Output/');
 
 %% Weather input settings
-weatherInput = 'bei'; % Choose name of location, see folder inputs\energyPlus\data\
+weatherInput = 'bei'; % Choose name of location, see folder inputs/energyPlus/data/
 seasonLength = 1;   % season length in days
 firstDay = 1;       % Beginning of season (days since January 1)
 
