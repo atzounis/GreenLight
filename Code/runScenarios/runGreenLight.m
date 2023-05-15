@@ -47,6 +47,9 @@ function gl = runGreenLight(lampType, weather, filename, paramNames, paramVals, 
     %% Set default values
     absTol = 1e-6; % default is 1e-6
     relTol = 1e-3; % default is 1e-3
+    filename = 'output';
+%     lampType = 'led';
+    
     
     if ~exist('weather', 'var') || isempty(weather)
         weather = 5;
