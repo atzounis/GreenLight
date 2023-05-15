@@ -33,10 +33,10 @@ function gl = runHeatByLightScenarios(varargin)
     % Set directories for loading data and saving output
     currentFile = mfilename('fullpath');
     currentFolder = fileparts(currentFile);
-    dataFolder = strrep(currentFolder, '\Code\runScenarios', ...
-        '\Code\inputs\energyPlus\data\');
-    outputFolder = strrep(currentFolder, '\Code\runScenarios', ...
-        '\Output\');
+    dataFolder = strrep(currentFolder, '/Code/runScenarios', ...
+        '/Code/inputs/energyPlus/data/');
+    outputFolder = strrep(currentFolder, '/Code/runScenarios', ...
+        '/Output/');
 
     absTol = 1e-6; % default is 1e-6
     relTol = 1e-3; % default is 1e-3

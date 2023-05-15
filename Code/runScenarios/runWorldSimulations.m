@@ -22,7 +22,7 @@ seasonLength = 350; % Length of season (days) (default is 350)
 currentFile = mfilename('fullpath');
 currentFolder = fileparts(currentFile);
 dataFolder = strrep(currentFolder, '/GreenLight/Code/runScenarios', ...
-    '/GreenLight/Code/inputs/energyPlus/data\');
+    '/GreenLight/Code/inputs/energyPlus/data/');
 outputFolder = strrep(currentFolder, '/GreenLight/Code/runScenarios', ...
     '/GreenLight/Output/');
 

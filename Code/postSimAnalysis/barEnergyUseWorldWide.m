@@ -14,8 +14,8 @@
 % Set directories for loading data
 currentFile = mfilename('fullpath');
 currentFolder = fileparts(currentFile);
-outputFolder = strrep(currentFolder, '\GreenLight\Code\postSimAnalysis', ...
-    '\GreenLight\Output\referenceSetting\');
+outputFolder = strrep(currentFolder, '/GreenLight/Code/postSimAnalysis', ...
+    '/GreenLight/Output/referenceSetting/');
     % The last line may need to be modified, depending where the model 
     % output is saved
     % The path should include simulation results, with the following format
@@ -57,7 +57,7 @@ for k=1:fileNum
         savings(k/2) = 100*(1-(in(k,2)+in(k,3))/(in(k-1,2)+in(k-1,3)));
     end
 end
-fprintf('\n');
+fprintf('/n');
 
 % get list of locations
 for k=1:length(labels)

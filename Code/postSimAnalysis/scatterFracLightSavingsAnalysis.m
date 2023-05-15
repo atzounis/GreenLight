@@ -15,8 +15,8 @@
 % Set directories for loading data
 currentFile = mfilename('fullpath');
 currentFolder = fileparts(currentFile);
-outputFolder = strrep(currentFolder, '\Code\postSimAnalysis', ...
-    '\Output\');
+outputFolder = strrep(currentFolder, '/Code/postSimAnalysis', ...
+    '/Output/');
     % The last line may need to be modified, depending where the model 
     % output is saved
     % The path should include subfolders with simulation results, 
@@ -116,8 +116,8 @@ function [fracLight, savings, in, out, labels, yield] = fracLightVsTotalSavings(
     files = dir(path);
     files = files(3:end);
     
-    if path(end)~= '\'
-        path = [path '\'];
+    if path(end)~= '/'
+        path = [path '/'];
     end
     
     fileNum = length(files);

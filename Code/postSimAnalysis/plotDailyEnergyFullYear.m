@@ -14,8 +14,8 @@
 % Set directories for loading data 
 currentFile = mfilename('fullpath');
 currentFolder = fileparts(currentFile);
-outputFolder = strrep(currentFolder, '\GreenLight\Code\postSimAnalysis', ...
-    '\GreenLight\Output\referenceSetting\');
+outputFolder = strrep(currentFolder, '/GreenLight/Code/postSimAnalysis', ...
+    '/GreenLight/Output/referenceSetting/');
     % The last line may need to be modified, depending where the model 
     % output is saved
     % The path should include simulation results, with the following format
